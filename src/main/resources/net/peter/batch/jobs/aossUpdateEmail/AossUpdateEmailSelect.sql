@@ -1,0 +1,1 @@
+select ID, RMID, EMAIL_ADDR, UPDATED_BY from TBL_ESB_AOSS_EMAIL_ADDR where EXECUTED is null order by dt_created

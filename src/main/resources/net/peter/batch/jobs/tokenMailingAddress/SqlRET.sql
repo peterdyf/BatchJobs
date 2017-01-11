@@ -1,0 +1,1 @@
+INSERT INTO TB_FORCE_SUBS_RET (RMID, AC_NO, CATEGORY, NAME, ADDR, RET) values (:rmid, :acNo, :category, :name, :addr, :ret)

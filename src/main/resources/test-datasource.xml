@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource name="ckwDataSource" auth="Container" type="javax.sql.DataSource" driverClassName="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"
+		url="jdbc:log4jdbc:oracle:thin:@10.26.2.134:1521:CKWSIT1" username="CKW_USR_DEV" password="2Koq3EryvNXS5w4+zMQsuM/tM2bLkFCQ"
+		maxActive="5" maxIdle="0" maxWait="-1" />
+
+	<Resource name="chiNameDataSources" auth="Container" type="javax.sql.DataSource" driverClassName="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"
+		url="jdbc:log4jdbc:sqlserver://10.30.61.100:1433;DatabaseName=CBINA" username="nacpy" password="GoUERejt5O/4lXrskO+m87UPYIvztWKw"
+		maxActive="5" maxIdle="0" maxWait="-1" />
+
+</Context>

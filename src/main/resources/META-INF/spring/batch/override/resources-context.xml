@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<mvc:interceptors>
+		<bean class="org.springframework.batch.admin.web.interceptor.ContentTypeInterceptor">
+			<property name="extensions">
+				<list>
+					<value>rss</value>
+					<value>xml</value>
+					<value>txt</value>
+					<value>json</value>
+					<value>properties</value>
+				</list>
+			</property>
+		</bean>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<mvc:exclude-mapping path="/login/**" />
+			<mvc:exclude-mapping path="/resources/**" />
+			<bean class="net.peter.batch.web.security.AclInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+	<!-- need to set order to prevent overriding by customized ViewResolver -->
+	<bean class="org.springframework.web.servlet.view.BeanNameViewResolver">
+		<property name="order">
+			<util:constant static-field="org.springframework.core.Ordered.HIGHEST_PRECEDENCE" />
+		</property>
+	</bean>
+
+</beans>

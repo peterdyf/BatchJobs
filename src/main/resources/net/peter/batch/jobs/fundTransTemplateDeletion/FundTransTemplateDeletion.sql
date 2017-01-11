@@ -1,0 +1,1 @@
+UPDATE TBL_PB_FUND_TXFER_TMP SET is_del = 1 WHERE id = :id

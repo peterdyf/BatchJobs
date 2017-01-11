@@ -1,0 +1,1 @@
+update TBL_ESB_AOSS_EMAIL_ADDR set EXECUTED='Y' where id=:id

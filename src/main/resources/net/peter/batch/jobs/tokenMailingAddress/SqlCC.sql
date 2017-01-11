@@ -1,0 +1,1 @@
+INSERT INTO TB_FORCE_SUBS_CC (ID_NO, AC_NO, FULL_NAME, ADDR_1, ADDR_2, ADDR_3, ADDR_4) values (:idNo, :acNo, :fullName, :addr1, :addr2, :addr3, :addr4)

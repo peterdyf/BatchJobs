@@ -1,0 +1,1 @@
+INSERT INTO CUST_CHI_ADDR (APP_ID, NA_KEY, TP_LANG, NAME_1, NAME_2, ADDR_1, ADDR_2, ADDR_3, ADDR_4) values (:appId, :naKey, :tpLang, :name1, :name2, :addr1, :addr2, :addr3, :addr4)

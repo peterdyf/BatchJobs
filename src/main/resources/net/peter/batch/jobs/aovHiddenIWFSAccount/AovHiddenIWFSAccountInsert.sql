@@ -1,0 +1,1 @@
+insert into TBL_PB_ACCT_CLS_IWFS (ACC_NO, TERM_DT, CUSTOM_TYPE) values (:accNo, :acctTermDt, :custType)

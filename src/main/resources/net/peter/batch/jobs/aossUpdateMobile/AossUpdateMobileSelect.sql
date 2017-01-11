@@ -1,0 +1,1 @@
+select t.ID, t.RMID, u.ib_acct_no, t.SMS_PHONE_NUMBER, t.UPDATED_BY, i.ib_acct_no pre_ib_acct_no, i.otp_mb_ctry pre_otp_mb_ctry, i.otp_mb_area pre_otp_mb_area, i.otp_mb_no pre_otp_mb_no from TBL_ESB_AOSS_SMS_NUMBER t join tbl_pb_user u on t.rmid=u.rmid and u.IS_CLS=0 left join TBL_TFA_USER_INFO i on i. ib_acct_no = u.ib_acct_no where t.EXECUTED is null

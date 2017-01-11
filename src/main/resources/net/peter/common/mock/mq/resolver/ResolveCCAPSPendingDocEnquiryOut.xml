@@ -1,0 +1,21 @@
+<esb>
+	<Header>
+		<ClientId>IBANK</ClientId>
+		<CServiceType>APSDocEnquiry</CServiceType>
+		<CMsgType>CreditCard</CMsgType>
+		<CTxnId>02345678901234567890</CTxnId>
+		<CDateTime>20150904023801</CDateTime>
+		<TxnId>2015100210514652029770000</TxnId>
+		<ComResCod>0000</ComResCod>
+		<ComResDes>Approved</ComResDes>
+	</Header>
+	<Body>
+		<TxnRefNo>02345678901</TxnRefNo>
+		<ReturnCode>03</ReturnCode>
+		<ReturnMsg>APPLICATIONREFNONOTFOUND</ReturnMsg>
+		<NationalId>0234567890123456</NationalId>
+		<MappedDocTypes>123456789</MappedDocTypes>
+		<OtherDocs1></OtherDocs1>
+		<OtherDocs2></OtherDocs2>
+	</Body>
+</esb>

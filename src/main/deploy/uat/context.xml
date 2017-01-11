@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Context antiResourceLocking="true">
+	<Resource auth="Container" driverClassName="net.sf.log4jdbc.sql.jdbcapi.DriverSpy" factory="com.cncbinternational.tomcat.EncryptedDataSourceFactory"
+		maxActive="5" maxIdle="0" maxWait="-1" name="ckwDataSource" password="chQpQYmoKhOlENbOVTBWLfwDSs1iaDm/" type="javax.sql.DataSource"
+		url="jdbc:log4jdbc:oracle:thin:@10.30.42.101:1521:CKWUAT1" username="ckw_usr" />
+	<Resource auth="Container" driverClassName="net.sf.log4jdbc.sql.jdbcapi.DriverSpy" factory="com.cncbinternational.tomcat.EncryptedDataSourceFactory"
+		maxActive="5" maxIdle="0" maxWait="-1" name="chiNameDataSources" password="hxglHVZXkEXrlWvXCxqiZtOGRsDSUWmq" type="javax.sql.DataSource"
+		url="jdbc:log4jdbc:sqlserver://10.30.61.100:1433;DatabaseName=CBINA" username="nacpy" />
+</Context>

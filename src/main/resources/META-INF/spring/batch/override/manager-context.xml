@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                                 http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean name="schedulersView" parent="standard">
+		<property name="attributes">
+			<props merge="true">
+				<prop key="body">/manager/schedulers/html/jobSchedulers.ftl</prop>
+				<prop key="titleCode">schedulers.title</prop>
+				<prop key="titleText">Spring Batch Admin: Schedulers</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean name="schedulerNew" parent="standard">
+		<property name="attributes">
+			<props merge="true">
+				<prop key="body">/manager/schedulers/html/jobSchedulerNew.ftl</prop>
+				<prop key="titleCode">scheduler.title</prop>
+				<prop key="titleText">Spring Batch Admin: Scheduler</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean name="schedulerView" parent="standard">
+		<property name="attributes">
+			<props merge="true">
+				<prop key="body">/manager/schedulers/html/jobScheduler.ftl</prop>
+				<prop key="titleCode">scheduler.title</prop>
+				<prop key="titleText">Spring Batch Admin: Scheduler</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean name="schedulerMessage" parent="standard">
+		<property name="attributes">
+			<props merge="true">
+				<prop key="body">/manager/schedulers/html/jobSchedulerMessage.ftl</prop>
+				<prop key="titleCode">scheduler.title</prop>
+				<prop key="titleText">Spring Batch Admin: Scheduler</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean name="loginPage" parent="standard">
+		<property name="attributes">
+			<props merge="true">
+				<prop key="body">/manager/login/html/login.ftl</prop>
+				<prop key="titleCode">login.title</prop>
+				<prop key="titleText">Spring Batch Admin: Login</prop>
+			</props>
+		</property>
+	</bean>
+</beans>

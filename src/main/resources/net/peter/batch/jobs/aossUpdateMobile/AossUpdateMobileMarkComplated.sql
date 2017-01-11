@@ -1,0 +1,1 @@
+update TBL_ESB_AOSS_SMS_NUMBER set EXECUTED='Y' where id=:id

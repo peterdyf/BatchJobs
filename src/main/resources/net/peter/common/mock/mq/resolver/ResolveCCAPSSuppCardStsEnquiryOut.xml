@@ -1,0 +1,30 @@
+<esb>
+	<Header>
+		<ClientId>IBANK</ClientId>
+		<CServiceType>APSCardStsEnquiry</CServiceType>
+		<CMsgType>CreditCard</CMsgType>
+		<CTxnId>02345678901234567890</CTxnId>
+		<CDateTime>20150904023801</CDateTime>
+		<TxnId>2015100210535269821610000</TxnId>
+		<ComResCod>0000</ComResCod>
+		<ComResDes>Approved</ComResDes>
+	</Header>
+	<Body>
+		<TxnRefNo>02345678901</TxnRefNo>
+		<ReturnCode>03</ReturnCode>
+		<ReturnMsg>APPLICATION REF NO NOT FOUND</ReturnMsg>
+		<NationalId>123</NationalId>
+		<NoOfSuppCard>01</NoOfSuppCard>
+		<Cards>
+			<Card>
+				<Index>1</Index>
+				<NationalId>R9764495</NationalId>
+				<FamilyName>SHUM</FamilyName>
+				<FirstName>GOS</FirstName>
+				<OtherName></OtherName>
+				<ApprSts>0</ApprSts>
+				<SuppCardLimit>111</SuppCardLimit>
+			</Card>
+		</Cards>
+	</Body>
+</esb>

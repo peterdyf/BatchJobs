@@ -1,0 +1,1 @@
+UPDATE tbl_pb_bill_pymt_tmp SET is_del = 1 WHERE id = :id
